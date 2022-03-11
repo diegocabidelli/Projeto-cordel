@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;900&family=Roboto+Slab:wght@200;400&family=Rubik&family=Teko:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+   
+
+}
+body{
+   font-family: var(--font1);
+    min-height: 100vh;
+    
+}
+
+:root{
+    --font1: 'verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    --font2: 'Passion One', 'cursive';
+    --font3: 'Sriracha', cursive;
+}
+/*CABEÇALHO */
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+header h1{
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-variant: small-caps; /*Todas misuculo, mas as primeiras são maiores*/
+    font-size: 10vw;/*posso me basear pela largura da tela*/
+}
+header p{
+    font-family: var(--font1);
+    padding-bottom: 50px;
+
+}
+header a, footer a{
+    font-family: var(--font1);
+    text-decoration: none;
+    color: white;
+    font-weight:bolder ;
+
+}
+a:hover, footer a:hover{
+    text-decoration: underline;/*sublinhado no link*/
+}
+
+
+
+/*Section*/
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.5vw; /**/
+}
+
+section.normal{
+    
+    color: black;
+}
+
+section.imagem{
+    color: black;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.301);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section p{
+    padding-bottom: 2em;
+}
+
+/*A ''borda'' que fica em volta da letra*/
+section.imagem p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px  0px black;
+}
+
+section#img01{
+    background-image: url('imagens/background001.jpg');
+    background-position:  right center;
+    
+}
+section#img02{
+    background-image: url('imagens/background002.jpg');
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*RODA PÉ */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
